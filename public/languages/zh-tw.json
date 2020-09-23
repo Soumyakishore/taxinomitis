@@ -122,7 +122,7 @@
         "LETMEKNOW": "通知我"
     },
     "WELCOME": {
-        "TITLE": "教電腦如何玩遊戲",
+        "TITLE": "訓練電腦學習玩遊戲",
         "GET_STARTED": "開始進行",
         "LEARN_MORE": "學習更多",
         "ADMIN_LABEL": "切換到<strong>管理頁面</strong>",
@@ -1298,6 +1298,7 @@
             "VERIFY": "審核",
 
             "LITE_30_DAYS_EXPIRE": "如果30天內未使用IBM Cloud可能會停用「精簡版」方案的Watson API密碼",
+            "TRIAL_30_DAYS_EXPIRE": "30天後，IBM Cloud可能會停用試用方案的Watson API密碼",
 
             "NO_TEXT_CREDENTIALS": "你沒有任何Watson Assistant權限。<br/>這代表你無法訓練模型在<strong>文字</strong>專案中使用",
             "NO_IMAGE_CREDENTIALS": "你沒有任何Watson Visual Recognition的API密碼。<br/>這代表你無法訓練模型在<strong>圖片</strong>專案中使用",
@@ -1464,6 +1465,7 @@
         }
     },
     "HELP": {
+        "LOG": "下載紀錄",
         "CONTACT": "如果你有任何問題或疑問，請洽詢<a target='_blank' href='https://groups.google.com/d/forum/mlforkids'>兒童機器學習論壇</a>",
         "GETTINGSTARTED": {
             "TITLE": "第一次使用？",
@@ -1560,14 +1562,14 @@
             "Q6-A-3": "如果超過好幾分鐘，則值得重新整理頁面進行檢查。",
             "Q6-A-4": "如果已超過十分鐘，則可能值得考慮重新啟動（點擊「取消」按鈕，然後點擊該按鈕以再次訓練新的機器學習模型）。",
 
-            "Q7": "\"Your class is sharing Watson API keys ... there are currently none available\"",
+            "Q7": "你的班級使用共享的Watson Keys，目前已無可使用的空間。",
             "Q7-A-1": "此工具中的機器學習模型是使用IBM Watson API建立的。",
-            "Q7-A-2": "If you have a \"managed\" class account, this means your class is sharing these keys with many other schools. ",
-            "Q7-A-3": "There are normally enough for all schools, but if it is very busy and all of the available API keys are currently in use, attempts to train new machine learning models will fail, and this message will be displayed:",
-            "Q7-A-4": "Your class is sharing Watson Assistant / Visual Recognition \"API keys\" with many other schools, and unfortunately there are currently none available. Please let your teacher or group leader know that you will have to train your machine learning model later",
+            "Q7-A-2": "如果你使用「有班級管理」功能的帳號，代表你的班級將與其他學校共用API密碼。",
+            "Q7-A-3": "通常來說足夠所有學校使用，但在非常高度密集使用的狀況下，可能會導致機器學習模型訓練失敗，並出現以下訊息：",
+            "Q7-A-4": "你的班級與其他許多學校共用Watson Assistant / Visual Recognition API Keys，很抱歉目前已無足夠的空間可供使用。請讓你的老師或教學領導者知道你需要晚點才能訓練你的機器學習模型。",
             "Q7-A-5": "如果具有成功訓練過模型的學生刪除了他們的模型，這將釋放一個工作空間供其他學生使用。",
-            "Q7-A-6": "The best thing to do is to try again later, after other students have deleted their machine learning models and API keys are available again. Your training data will still be safe until then.",
-            "Q7-A-7": "Another way to avoid this error is for your class to create an \"unmanaged\" class account, which is where a teacher creates their own Watson \"API keys\" that can be dedicated only for use by their own class."
+            "Q7-A-6": "最好的解決方法是等其他學生刪除他們的機器學習模型後再測試一次。即便還沒完成訓練，你的訓練資料也會安全保存著。",
+            "Q7-A-7": "避免此錯誤的另一種方法是建立一個「沒有班級管理」的帳號，如此一來老師需要建立自己的Watson API Keys，而這組密碼就是班級專用的。"
         },
 
         "TEACHERUI": {
@@ -1641,7 +1643,7 @@
 
             "Q5": "學生建立的訓練資料會發生什麼事？",
             "Q5-A-1": "學生使用此網站進行的所有機器學習項目中的一個步驟是建立或收集訓練範例。 對於文字專案，這可能代表著輸入簡短的文字段落。 對於圖片專案，這可能代表著將圖片繪製到螢幕畫布上或使用網絡攝像頭拍照。 對於數字專案，這意味著輸入數字集合",
-            "Q5-A-2": "所有這些訓練範例都儲存在位於美國達拉斯的<a href='https://www.ibm.com/cloud/compose/mysql'>IBM Cloud上託管的MySQL數據庫中</a>。 作為數據庫管理員，我可以訪問所有學生項目的所有這些訓練範例，但是除了使學生能夠進入和使用自己的專案之外，我沒有將其用於其他任何目的。 除了將數據提交給下面描述的兩個IBM Watson之外，我不會公開（公開地或個人或第三方）訓練數據。",
+            "Q5-A-2": "所有這些訓練範例都儲存在位於美國達拉斯的<a href='https://www.ibm.com/cloud/databases-for-postgresql'>IBM Cloud上託管的MySQL數據庫中</a>。 身為數據庫管理員，我可以訪問全部學生專案中所有訓練範例，但是除了讓學生能夠進入和使用自己的專案之外，我沒有將其用於其他任何目的。 我不會公開（公開地或個人或第三方）訓練數據，除了將數據提交給下面描述的兩個IBM Watson之外。",
             "Q5-A-3": "文字專案的機器學習模型是使用<a href='https://www.ibm.com/cloud/watson-assistant/'>IBM Watson Assistant</a>雲端服務建立的，這意味著當學生訓練模型時，他們輸入的訓練範例的副本將<a href='https://cloud.ibm.com/apidocs/assistant#create-workspace'>提交給IBM Watson</a>。 （此雲端服務的位置是教師在<a href='https://machinelearningforkids.co.uk/apikeys-guide'>建立API密碼</a>時選擇的位置。）IBM Watson不會將這些訓練範例用於任何其他目的。 這是因為如<a href='https://cloud.ibm.com/docs/services/watson?topic=watson-gs-logging-overview'>Watson文件</a>中所述，「兒童機器學習」<a href='https://cloud.ibm.com/apidocs/assistant#data-collection'>要求退出</a>IBM正在用於改進服務的學生訓練範例。",
             "Q5-A-4": "文字專案的機器學習模型是使用<a href='https://www.ibm.com/watson/services/visual-recognition/'>IBM Visual Recognition</a>雲端服務建立的，這意味著當學生訓練模型時，他們輸入的訓練範例的副本將<a href='https://cloud.ibm.com/apidocs/visual-recognition#create-a-classifier'>提交給IBM Watson</a>。 （此雲端服務的位置是教師在<a href='https://machinelearningforkids.co.uk/apikeys-guide'>建立API密碼</a>時選擇的位置。）IBM Watson不會將這些訓練範例用於任何其他目的。 這是因為如<a href='https://cloud.ibm.com/docs/services/watson?topic=watson-gs-logging-overview'>Watson文件</a>中所述，「兒童機器學習」<a href='https://cloud.ibm.com/apidocs/visual-recognition#data-collection'>要求退出</a>IBM正在用於改進服務的學生訓練範例。",
             "Q5-A-5": "IBM Watson提供了一些<a href='https://cloud.ibm.com/docs/services/assistant?topic=assistant-information-security#information-security-gdpr-wa'>與其服務共享訓練數據的通用規範</a>，這些規範也適用於在「機器學習為兒童」中建立和收集的訓練數據。 具體來說，應勸告學生不要在收集的示例中使用包括個人身份的訊息。"
